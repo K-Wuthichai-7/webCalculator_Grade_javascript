@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>คำนวนเกรด</title>
+
+
+    <style>
+        ul {
+            background-color: rgb(244, 246, 247);
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <ul class="nav justify-content-start >
+            <li class=" nav-item">
+            <a class="nav-link  text-dark fw-bold active " aria-current="page" href="#">Example</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-dark" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Grade</a>
+            </li>
+            <li class="nav-item text-dark">
+                <a class="nav-link text-dark " href="#" tabindex="-1" aria-disabled="true">Calculator</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="container-fluid mt-5  ">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-lg-6 text-center " style="background-color: rgb(223, 225, 226);">
+                <h1>คำนวนเกรด</h1>
+
+                <form>
+                    <label for="name">ชื่อ:</label><br>
+                    <input type="text" id="names" name="names"><br>
+                    <label for="studentID">รหัสนักเรียน:</label><br>
+                    <input type="text" id="studentID" name="studentID"><br>
+                    <label for="score">คะแนน:</label><br>
+                    <input type="text" id="score" name="score"><br>
+
+                </form>
+                <button onclick="add()" class="mt-2 mb-3">คำนวณ</button>
+                <p>ชื่อของคุณคือ :</p>
+                <p class="you_name"></p>
+                <p>รหัสนักศึกษาของคุณคือ :</p>
+                <p class="you_id"></p>
+                <p>คะแนนของคุณคือ :</p>
+                <p class="you_score"></p>
+                <p>เกรดของคุณคือ :</p>
+                <p class="you_grade"></p>
+
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <script src="cal_grade.js">
+
+
+    </script>
+</body>
+
+</html>
